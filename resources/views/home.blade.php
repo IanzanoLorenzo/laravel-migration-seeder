@@ -5,7 +5,7 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-auto">
-                <a class="btn btn-primary" href="{{ route('todays-train') }}">
+                <a class="btn btn-primary" href="{{ route('todays.train') }}">
                     GUARDA I TRENI DI OGGI
                 </a>
             </div>

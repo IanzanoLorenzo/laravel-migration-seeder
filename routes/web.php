@@ -15,5 +15,5 @@ use App\Http\Controllers\Guest\PageController;
 
 Route::get('/', [PageController::class, 'index'])->name('index');
 
-Route::get('todays-train', [PageController::class, 'todaysTrain'])->name('todays-train');
+Route::get('todays-train', [PageController::class, 'todaysTrain'])->name('todays.train');
 

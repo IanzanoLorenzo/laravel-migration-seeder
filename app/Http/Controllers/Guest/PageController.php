@@ -14,7 +14,8 @@ class PageController extends Controller
     }
 
     public function todaysTrain(){
-        $trains = Train::where('data_partenza', '=', date('Y-m-d'))->get();
-        return view('todays-trains', compact('trains'));
+        $data = date('Y-m-d');
+        $trains = Train::where('data_partenza', '=', $data)->get();
+        return view('todays-trains', compact('trains', 'data'));
     }
 }
